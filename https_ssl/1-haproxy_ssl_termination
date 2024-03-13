@@ -41,7 +41,7 @@ frontend okekecenter-tech-frontend
         default_backend okekecenter-tech-backend
 
 frontend okekecenter-tech-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.okekecenter.tech
+        bind *:443 ssl crt /etc/haproxy/certs/www.okekecenter.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend okekecenter-tech-backend
 
